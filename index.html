@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>My Recipe Collection</title> 
+    <link rel="stylesheet" href="css/style.css"> 
+</head> 
+<body> 
+    <header> 
+        <h1>My Recipe Collection</h1> 
+        <p>Collection of Recipes</p> 
+    </header> 
+ 
+    <main> 
+        <div class="recipe-grid"> 
+            <div class="recipe-card"> 
+                <h2>Homemade Hot Chocolate</h2> 
+                <div class="recipe-meta"> 
+                    <span>10 mins</span> 
+                    <span>1 servings</span> 
+                </div> 
+                <h3>Ingredients:</h3> 
+                <ul> 
+                    <li>1 cup milk</li> 
+                    <li>1/2 cup unsweetened cocoa powder</li> 
+                    <li>1/2 cup sugar</li> 
+                    <li>1/2 cup of chocolate chips or 3 small blocks of dark chocolate</li> 
+                    <li>1 tsp of vanilla extract</li> 
+                    <li>Cool Whip for topping</li>
+                    <li>Dash of cinnamon</li>
+                </ul> 
+                <h3>Instructions:</h3> 
+                <ol> 
+                    <li>Whisk together milk, cocoa powder and sugar on medium heat until smooth</li> 
+                    <li>Once smooth stir in vanilla extract, chocolate chips or chocolate blocks</li> 
+                    <li>Pour into cup and add cool whips and cinnamon if desired</li>  
+                </ol> 
+            </div> 
+ 
+            <div class="recipe-card"> 
+                <h2>Jasmyn's Special "Not-Sheperds" Pie</h2> 
+                <div class="recipe-meta"> 
+                    <span>1 hour</span> 
+                    <span>6 servings</span> 
+                </div> 
+                <h3>Ingredients:</h3> 
+                <ul> 
+                    <li>1 lb hamburger helper</li> 
+                    <li>3 skinned,boiled and chopped potatoes</li> 
+                    <li>2 bacon strips</li> 
+                    <li>1/2 cup of mayo</li> 
+                    <li>1 tsp of paprika/li> 
+                    <li>1 tsp of white pepper</li>
+                    <li>1 tsp of salt</li>
+		    <li>1 tsp of pepper</li>
+                    <li>1 tsp of onion powder</li>
+		    <li>1 tsp of garlic powder</li>
+                    <li>2 slices of cheese of your choice</li>
+                    <li>1 can of corn</li>
+                    <li>chopped chives for flavour</li>
+ 	     
+                     
+                </ul> 
+                <h3>Instructions:</h3> 
+                <ol> 
+                    <li>Preheat oven to 350�F</li> 
+                    <li>Mash potatoes and add mayo, paprika, onion powder, garlic powder, salt, and white pepper</li> 
+                    <li>Cook bacon until cripsy and mix with potatoes</li> 
+                    <li>Mix chives into mashed potatoes</li> 
+                    <li>Brown hamburger meat and add salt, pepper, onion and garlic powder</li> 
+                    <li>layer ingredients into a 9x9 baking pan</li>
+                    <li>Place hamburger meat, then corn, add 4 cheese slices on top of corn, and spoon in mashed potatoes</li>
+                    <li>Bake for 25 minutes until golden brown around the edges</li> 
+                </ol> 
+            </div> 
+ 
+            <div class="recipe-card"> 
+                <h2>Honey Glazed Salmon</h2> 
+                <div class="recipe-meta"> 
+                    <span>30 mins</span> 
+                    <span>2 servings</span> 
+                </div> 
+                <h3>Ingredients:</h3> 
+                <ul> 
+                    <li>Salmon</li> 
+                    <li>2 tbsp of soy sauce or teriyak sauce</li> 
+                    <li>2 tbsp of brown sugar</li> 
+                    <li>1 tbsp of honey</li>   
+                </ul> 
+                <h3>Instructions:</h3> 
+                <ol> 
+                    <li>Preheat oven to 350</li> 
+                    <li>Mix soy/teriyak sauce, brown sugar and honey into a small mixing bowl</li> 
+                    <li>Place salmon on an a baking sheet with almiumin foil</li> 
+                    <li>Smear the glaze all over and on the sides of the salmon</li> 
+                    <li>Bake for 25 mins until salmon is flaky</li> 
+                </ol> 
+            </div> 
+        </div> 
+    </main> 
+ 
+    <footer> 
+        <p>Recipe Website v1.0 | Powered by Kubernetes</p> 
+        <p>Hostname: <span id="hostname">Loading...</span></p> 
+    </footer> 
+ 
+    <script> 
+        // Display pod hostname to demonstrate K8s load balancing 
+        fetch('/hostname') 
+            .then(response => response.text()) 
+            .catch(() => 'Unable to fetch hostname') 
+            .then(data => { 
+                document.getElementById('hostname').textContent = data || 'Local'; 
+            }); 
+    </script> 
+</body> 
+</html>

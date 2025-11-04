@@ -1,0 +1,20 @@
+### Required Software
+1. **Install on your local machine:**
+   - Git
+   - Docker Desktop (includes Kubernetes)
+   - Visual Studio Code
+   - kubectl (Kubernetes CLI)
+   - Helm (Kubernetes package manager)
+   - A cloud provider CLI (AWS CLI, Azure CLI, or gcloud - choose one)
+
+2. **VS Code Extensions to Install:**
+   - Docker
+   - Kubernetes
+   - YAML
+   - Remote - Containers
+   - GitLens (optional but helpful)
+   - GitHub Pull Requests and Issues
+
+3. **Create Accounts:**
+   - GitHub account
+   - Docker Hub account (or use your cloud provider's) 
